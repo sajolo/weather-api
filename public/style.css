@@ -1,0 +1,75 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e7eff6; /* Fondo azul claro */
+    color: #333; /* Texto en gris oscuro para mejor legibilidad */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    color: #005f73; /* Color azul para los títulos */
+    text-align: center;
+}
+
+/* Sección del clima actual */
+#currentWeather {
+    background-color: #a2d2ff; /* Fondo coral claro */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Sección de la previsión */
+#forecast {
+    background-color: #caffbf; /* Fondo verde claro */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Clases para los diferentes rangos de temperatura */
+.temp-cold {
+    background-color: #dac9e2; /* Violeta claro */
+}
+
+.temp-mild {
+    background-color: #fff3b0; /* Amarillo claro */
+}
+
+.temp-warm {
+    background-color: #fabb87; /* Naranja claro */
+}
+
+/* Elementos individuales de la previsión */
+.forecast-item {
+    border-bottom: 1px solid #ddd; /* Línea divisora */
+    padding: 10px 0;
+}
+
+/* Asegurarse de que el diseño sea responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño en dispositivos estrechos */
+    }
+}
+
